@@ -94,11 +94,13 @@
       animation: fadeIn 1.5s ease;
     }
 
-    .hero h1 {
-      font-size: 90px;
-      letter-spacing: 5px;
-      margin-bottom: 20px;
-    }
+   .hero h1 {
+   font-size: clamp(30px, 7vw, 70px);
+   letter-spacing: 3px;
+   margin-bottom: 20px;
+   max-width: 1000px;
+   line-height: 1.1;
+}
 
     .hero p {
       color: #999;
@@ -138,7 +140,7 @@
       animation: bounce 2s infinite;
     }
 
-    /* ABOUT */
+    
 
     .about {
       min-height: 100vh;
@@ -177,9 +179,9 @@
     }
 
     .about-text h2 {
-      font-size: 55px;
-      margin: 20px 0;
-      line-height: 1.2;
+    font-size: clamp(20px, 5vw, 35px);
+    margin: 10px 0;
+    line-height: 1.2;
     }
 
     .about-text p {
@@ -204,9 +206,7 @@
       transform: scale(1.05);
     }
 
-    /* ===== ADD THIS CSS BELOW YOUR CURRENT CSS ===== */
-
-    /* PROJECTS */
+    
 
     .projects,
     .editing {
@@ -225,9 +225,10 @@
     }
 
     .section-title h2 {
-      font-size: 55px;
-      margin-top: 15px;
-    }
+    font-size: clamp(30px, 5vw, 40px);
+    margin-top: 15px;
+    line-height: 1.1;
+   }
 
     .projects-grid {
       display: grid;
@@ -300,7 +301,7 @@
   margin-bottom: 30px;
 }
 
-    /* CONTACT */
+  
 
     .contact {
       padding: 120px 10%;
@@ -375,20 +376,63 @@
     }
 
     @media(max-width: 900px) {
-      .hero h1 {
-        font-size: 55px;
-      }
 
-      .about-container {
-        flex-direction: column;
-        text-align: center;
-      }
+  .header {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-      .about-text h2 {
-        font-size: 40px;
-      }
+  nav {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .projects,
+  .about,
+  .contact {
+    padding: 90px 6%;
+  }
+
+  .project-card,
+  .contact-card {
+    padding: 28px;
+  }
+
     }
-    /* ===== SPACE / GLITCH BACKGROUND ===== */
+    
 
 .hero::before {
   content: "";
@@ -548,7 +592,7 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  
 
   <header class="header">
     <div class="logo">Portifólio</div>
@@ -556,7 +600,6 @@
     <nav>
       <a href="#about">Sobre</a>
       <a href="#projects">Projetos</a>
-      <a href="#editing">Edição</a>
       <a href="#contact">Contato</a>
     </nav>
 
@@ -567,15 +610,15 @@
     <h1>Gabriela Moreira da Silva Zakovicz</h1>
 
     <p>
-      Desenvolvedora front-end • Editora de vídeo • Marketing
+      Desenvolvedora front-end • Edição de vídeo • Marketing
     </p>
 
     <div class="skills">
       <span>React</span>
       <span>JavaScript</span>
       <span>UI/UX</span>
-      <span>Designer</span>
-      <span>Editora de vídeo</span>
+      <span>Desenvolvimento web</span>
+      <span>Editora</span>
       <span>Marketing</span>
     </div>
 
@@ -593,18 +636,18 @@
         <small>Sobre mim</small>
 
         <h2>
-          Criando experiências digitais cinematográficas através de código e criatividade.
+          Experiências visuais através da tecnologia.
         </h2>
 
         <p>
-          Olá! sou técnica em desenvolvimento de sistemas e no momento estou cursando graduação em engenharia de software. Sempre busco ampliar meus conhecimentos por meio de diversos cursos, além de vivências práticas que me deram experiência na área de marketing também adoro editar vídeos e imagens.
+          Olá! sou técnica em desenvolvimento de sistemas e no momento estou cursando graduação em engenharia de software. Sempre busco ampliar meus conhecimentos por meio de diversos cursos, além de vivências práticas que me deram experiência na área de marketing e edições de vídeos e imagens.
         </p>
 
         <p>
-          Sou determinada, organizada, responsável e comunicativa. Tenho noções de marketing e experiência do usuário (UX), banco de dados, pacote office, edições de vídeos e Inglês: básico / intermediário.
+          Sou determinada, organizada, responsável, sincera e comunicativa. Tenho noções de marketing e experiência do usuário (UX), banco de dados, pacote office, edições de vídeos e Inglês: básico / intermediário.
         </p>
 
-        <a href="#" class="btn">Ver projetos</a>
+        
       </div>
     </div>
   </section>
@@ -657,86 +700,12 @@
 
   
 
-  <section class="editing" id="editing">
-    <div class="section-title">
-      <small>Trabalho criativo</small>
-      <h2>Edições</h2>
-    </div>
-
-    <div class="editing-grid">
-
-      <div class="editing-card">
-        <h3>FNAF</h3>
-
-        <p>
-          FNAF: O verdadeiro dono da Fazbear Entertainment- Teoria bizarra e controversa
-        </p>
-
-        <a href="https://www.youtube.com/watch?v=bHE9qIiT5ms&t=6s" class="btn">Assistir</a>
-      </div>
-
-      <div class="editing-card">
-        <h3>Vídeo filosofia</h3>
-
-        <p>
-           Vídeo filosofia- A Filosofia da Realidade Moderna
-        </p>
-
-        <a href="https://youtu.be/aZdT4rkID7k?si=SZQPoGA_9lIUHsqT" class="btn">Assistir</a>
-      </div>
-
-    </div>
-
-    
-
-    <div class="videos-grid">
-      <div class="video-box">
-  <h3>Vídeos verticais</h3>
-
-  <p>
-    Anúncio nivea 
-  </p>
-
-  <a href="https://youtube.com/shorts/M4mbO8QQ_ak?feature=share" class="btn">Ver vídeo</a>
-</div>
-
-<div class="video-box">
-  <h3>Vídeos Verticais</h3>
-
-  <p>
-    Vídeos verticais de vendas ou promoções- Essêncial botânica anuncio 
-  </p>
-
-  <a href="https://youtube.com/shorts/C1L2KXpxXQE?feature=share" class="btn">Ver vídeo</a>
-</div>
-
-<div class="video-box">
-  <h3>Vídeos Verticais</h3>
-
-  <p>
-    Anúncio tecnologia
-  </p>
-
-  <a href="https://youtube.com/shorts/5p-De00ktsk?feature=share" class="btn">Ver Video</a>
-</div>
-
-<div class="video-box">
-  <h3>Vídeos Verticais</h3>
-
-  <p>
-    Anúncio dia dos pais
-  </p>
-
-  <a href="https://youtube.com/shorts/rmry1_-NIPg?feature=share" class="btn">Ver Video</a>
-</div>
-  </section>
-
     
 
   <section class="contact" id="contact">
     <div class="section-title">
       <small>Contato</small>
-      <h2>Vamos Trabalhar Juntos</h2>
+      <h2>Conecte-se comigo</h2>
     </div>
 
     <div class="contact-grid">
@@ -767,7 +736,7 @@
 
       <a href="" target="_blank" class="contact-card">
         <h3>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/whatsapp/whatsapp-original.svg" class="contact-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="contact-icon">
           WhatsApp
         </h3>
         <p>41 984660596</p>
