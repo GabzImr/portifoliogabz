@@ -1,0 +1,25 @@
+{
+  "name": "portif-lio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabzImr/Portif-lio2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GabzImr/Portif-lio2/issues"
+  },
+  "homepage": "https://github.com/GabzImr/Portif-lio2#readme",
+  "dependencies": {
+    "postprocessing": "^6.39.1",
+    "three": "^0.184.0"
+  }
+}
