@@ -230,7 +230,7 @@
 
     .about-text small {
       color: #940000;
-      letter-spacing: 15px;
+      letter-spacing: 5px;
       text-transform: uppercase;
     }
 
@@ -244,7 +244,7 @@
     .about-text p {
       font-family: 'JetBrains Mono', monospace;
       color: #aaa;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.9;
       margin-bottom: 25px;
     }
@@ -1796,7 +1796,7 @@ h1, h2, h3 {
 
     background:#11131c;
 
-    border:1px solid rgba(180,151,207,.15);
+    border:1px solid rgba(0, 0, 0, 0.007);
 
     border-radius:20px;
 
@@ -1869,7 +1869,7 @@ h1, h2, h3 {
 
 .education-card li{
 
-    padding:10px 0;
+    padding:1px 0;
 
     color:#ddd;
 
