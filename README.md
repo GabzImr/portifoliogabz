@@ -9,14 +9,14 @@ O objetivo do projeto foi criar uma interface moderna, responsiva e interativa, 
 ##  Acesse o projeto
 
  **Portfolio Online**
-> 
+> https://gabzimr.github.io/portifoliogabz/
 
 ---
 
 ##  Preview
 
 
-<img width="1889" height="912" alt="Captura de tela_28-6-2026_221854_127 0 0 1" src="https://github.com/user-attachments/assets/fd99e1d6-3351-469a-b921-789755dddc7b" /> <width="100%">
+<img width="1889" height="912" alt="Captura de tela_28-6-2026_221854_127 0 0 1" src="https://github.com/user-attachments/assets/fd99e1d6-3351-469a-b921-789755dddc7b" /> 
 
 
 ---
@@ -45,9 +45,6 @@ O objetivo do projeto foi criar uma interface moderna, responsiva e interativa, 
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45">
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="45">
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="45">
 
 </p>
 
@@ -76,28 +73,6 @@ O objetivo do projeto foi criar uma interface moderna, responsiva e interativa, 
 
 ---
 
- portfolio
-│
-├──  img
-│   ├── adobe.svg
-│   ├── adobepr.svg
-│   ├── cartas.jpg
-│   ├── eu.jpg
-│   ├── gitprofile.jpg
-│   ├── office.svg
-│   ├── tplace.jpg
-│   └── gerador.jpg
-│
-├──  index.html
-├──  style.css
-├──  script.js
-├──  pixelsnow.js
-│
-├──  package.json
-├──  package-lock.json
-└──  README.md
----
-
 
 - Estruturação semântica em HTML
 - Responsividade
@@ -121,5 +96,3 @@ Desenvolvedora Full Stack em formação.
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GabzImr)
 
 ---
-
-⭐ Se gostou do projeto, deixe uma estrela no repositório.
